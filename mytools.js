@@ -4,10 +4,10 @@
 
 // ---------- module ----------
 
-var a = require('request') ;
-var b = require('readline');
-var c = require('shelljs') ;
-var d = require('colors')  ;
+var a = require('request') ;    // npm install --save request
+var b = require('readline');    // npm install --save readline
+var c = require('shelljs') ;    // npm install --save shelljs
+var d = require('colors')  ;    // npm install --save colors
 
 // ---------- warna ----------
 
