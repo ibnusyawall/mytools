@@ -72,67 +72,67 @@ masuk.question(' [my#tools] | : ', (tampil) => {
      if (`${tampil}` == 1){
          masuk.question(pa + '!'.merah + gar + ' Enter Domain       : ', (aa) => {
              c.echo(garis);
-             c.echo(pa + '√'.biru + gar + ' Harap Tunggu ..');c.echo(garis); c.exec('curl ' + url[0] + `${aa}`); masuk.close();
+             c.echo(pa + '√'.biru + gar + ' Harap Tunggu ..');c.echo(garis); c.exec('curl -s ' + url[0] + `${aa}`); masuk.close();
          });
      }else if (`${tampil}` == 2){
          masuk.question(pa + '!'.merah + gar + ' Ip / Domain        : ', (bb) => {
              c.echo(garis);
-             c.echo(pa + '√'.biru + gar + ' Harap Tunggu ..');c.echo(garis); c.exec('curl ' + url[1] + `${bb}`); masuk.close();
+             c.echo(pa + '√'.biru + gar + ' Harap Tunggu ..');c.echo(garis); c.exec('curl -s ' + url[1] + `${bb}`); masuk.close();
           });
      }else if (`${tampil}` == 3){
          masuk.question(pa + '!'.merah + gar + ' Enter Domain       : ', (cc) => {
             c.echo(garis);
-            c.echo(pa + '√'.biru + gar + ' Harap Tunggu .. ');c.echo(garis); c.exec('curl ' + url[2] + `${cc}`); masuk.close();
+            c.echo(pa + '√'.biru + gar + ' Harap Tunggu .. ');c.echo(garis); c.exec('curl -s ' + url[2] + `${cc}`); masuk.close();
          });
      }else if (`${tampil}` == 4){
          masuk.question(pa + '!'.merah + gar + ' Enter NS of Domain : ', (dd) => {
             c.echo(garis);
-            c.echo(pa + '√'.biru + gar + ' Harap Tunggu .. ');c.echo(garis); c.exec('curl ' + url[3] + `${dd}`); masuk.close();
+            c.echo(pa + '√'.biru + gar + ' Harap Tunggu .. ');c.echo(garis); c.exec('curl -s ' + url[3] + `${dd}`); masuk.close();
          });
      }else if (`${tampil}` == 5){
          masuk.question(pa + '!'.merah + gar + ' Enter Domain       : ', (ee) => {
             c.echo(garis);
-            c.echo(pa + '√'.biru + gar + ' Harap Tunggu .. ');c.echo(garis); c.exec('curl ' + url[4] + `${ee}`); masuk.close();
+            c.echo(pa + '√'.biru + gar + ' Harap Tunggu .. ');c.echo(garis); c.exec('curl -s ' + url[4] + `${ee}`); masuk.close();
          });
      }else if (`${tampil}` == 6){
          masuk.question(pa + '!'.merah + gar + ' Ip / Domain        : ', (ff) => {
             c.echo(garis);
-            c.echo(pa + '√'.biru + gar + ' Harap Tunggu .. ');c.echo(garis); c.exec('curl ' + url[5] + `${ff}`); masuk.close();
+            c.echo(pa + '√'.biru + gar + ' Harap Tunggu .. ');c.echo(garis); c.exec('curl -s ' + url[5] + `${ff}`); masuk.close();
          });
      }else if (`${tampil}` == 7){
          masuk.question(pa + '!'.merah + gar + ' Enter Ip Address   : ', (gg) => {
             c.echo(garis);
-            c.echo(pa + '√'.biru + gar + ' Harap Tunggu .. ');c.echo(garis); c.exec('curl ' + url[6] + `${gg}`); masuk.close();
+            c.echo(pa + '√'.biru + gar + ' Harap Tunggu .. ');c.echo(garis); c.exec('curl -s ' + url[6] + `${gg}`); masuk.close();
          });
      }else if (`${tampil}` == 8){
          masuk.question(pa + '!'.merah + gar + ' Enter Ip Address   : ', (hh) => {
             c.echo(garis);
-            c.echo(pa + '√'.biru + gar + ' Harap Tunggu .. ');c.echo(garis); c.exec('curl ' + url[7] + `${hh}`); masuk.close();
+            c.echo(pa + '√'.biru + gar + ' Harap Tunggu .. ');c.echo(garis); c.exec('curl -s ' + url[7] + `${hh}`); masuk.close();
          });
      }else if (`${tampil}` == 9){
          masuk.question(pa + '!'.merah + gar + ' Ip / Domain        : ', (ii) => {
             c.echo(garis);
-            c.echo(pa + '√'.biru + gar + ' Harap Tunggu .. ');c.echo(garis); c.exec('curl ' + url[8] + `${ii}`); masuk.close();
+            c.echo(pa + '√'.biru + gar + ' Harap Tunggu .. ');c.echo(garis); c.exec('curl -s ' + url[8] + `${ii}`); masuk.close();
          });
      }else if (`${tampil}` == 10){
          masuk.question(pa + '!'.merah + gar + ' Enter Ip Address   : ', (jj) => {
             c.echo(garis);
-            c.echo(pa + '√'.biru + gar + ' Harap Tunggu .. ');c.echo(garis); c.exec('curl ' + url[9] + `${jj}`); masuk.close();
+            c.echo(pa + '√'.biru + gar + ' Harap Tunggu .. ');c.echo(garis); c.exec('curl -s ' + url[9] + `${jj}`); masuk.close();
          });
      }else if (`${tampil}` == 11){
          masuk.question(pa + '!'.merah + gar + ' Enter Domain       : ', (kk) => {
             c.echo(garis);
-            c.echo(pa + '√'.biru + gar + ' Harap Tunggu .. ');c.echo(garis); c.exec('curl ' + url[10] + `${kk}`); masuk.close();
+            c.echo(pa + '√'.biru + gar + ' Harap Tunggu .. ');c.echo(garis); c.exec('curl -s ' + url[10] + `${kk}`); masuk.close();
          });
      }else if (`${tampil}` == 12){
          masuk.question(pa + '!'.merah + gar + ' Enter Domain       : ', (ll) => {
             c.echo(garis);
-            c.echo(pa + '√'.biru + gar + ' Harao Tunggu .. ');c.echo(garis); c.exec('curl ' + url[11] + `${ll}`); masuk.close();
+            c.echo(pa + '√'.biru + gar + ' Harao Tunggu .. ');c.echo(garis); c.exec('curl -s ' + url[11] + `${ll}`); masuk.close();
          });
      }else if (`${tampil}` == 13){
          masuk.question(pa + '!'.merah + gar + ' Ip / Domain        : ', (mm) => {
             c.echo(garis);
-            c.echo(pa + '√'.biru + gar + ' Harap Tunggu .. ');c.echo(garis); c.exec('curl ' + url[12] + `${mm}`); masuk.close();
+            c.echo(pa + '√'.biru + gar + ' Harap Tunggu .. ');c.echo(garis); c.exec('curl -s ' + url[12] + `${mm}`); masuk.close();
          });
      }else if (`${tampil}` == 99){
             c.echo(pa + '√'.biru + gar + " Harap Tunggu .. "); c.exec('exit'); c.exec('clear off'); c.echo(' Thanks for using this tools');
