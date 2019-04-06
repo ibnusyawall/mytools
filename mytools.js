@@ -73,7 +73,7 @@ masuk.question(' [my#tools] | : ', (tampil) => {
          masuk.question(pa + '!'.merah + gar + ' Enter Domain       : ', (aa) => {
              c.echo(garis);
              c.echo(pa + '√'.biru + gar + ' Harap Tunggu ..');c.echo(garis); z(url[0]+ `${aa}`, function (error, response, body) {
-               c.echo(''); c.echo('|----- output -----|')
+               c.echo(''); c.echo('|----- output -----|'); c.echo('');
                c.echo(body)
                c.echo('|----- output -----|')
              }); masuk.close();
@@ -82,7 +82,7 @@ masuk.question(' [my#tools] | : ', (tampil) => {
          masuk.question(pa + '!'.merah + gar + ' Ip / Domain        : ', (bb) => {
              c.echo(garis);
              c.echo(pa + '√'.biru + gar + ' Harap Tunggu ..');c.echo(garis); z(url[1] + `${bb}`, function (error, response, body) {
-               c.echo(''); c.echo('|----- output -----|')
+               c.echo(''); c.echo('|----- output -----|'); c.echo('');
                c.echo(body)
                c.echo('|----- output -----|')
              }); masuk.close();
@@ -91,7 +91,7 @@ masuk.question(' [my#tools] | : ', (tampil) => {
          masuk.question(pa + '!'.merah + gar + ' Enter Domain       : ', (cc) => {
             c.echo(garis);
             c.echo(pa + '√'.biru + gar + ' Harap Tunggu .. ');c.echo(garis); z(url[2] + `${cc}`, function (error, response, body) {
-               c.echo(''); c.echo('|----- output -----|')
+               c.echo(''); c.echo('|----- output -----|'); c.echo('');
                c.echo(body)
                c.echo('|----- output -----|')
             }); masuk.close();
@@ -100,7 +100,7 @@ masuk.question(' [my#tools] | : ', (tampil) => {
          masuk.question(pa + '!'.merah + gar + ' Enter NS of Domain : ', (dd) => {
             c.echo(garis);
             c.echo(pa + '√'.biru + gar + ' Harap Tunggu .. ');c.echo(garis); z(url[3] + `${dd}`, function (error, response, body) {
-               c.echo(''); c.echo('|----- output -----|')
+               c.echo(''); c.echo('|----- output -----|'); c.echo('');
                c.echo(body)
                c.echo('|----- output -----|')
             }); masuk.close();
@@ -109,7 +109,7 @@ masuk.question(' [my#tools] | : ', (tampil) => {
          masuk.question(pa + '!'.merah + gar + ' Enter Domain       : ', (ee) => {
             c.echo(garis);
             c.echo(pa + '√'.biru + gar + ' Harap Tunggu .. ');c.echo(garis); z(url[4] + `${ee}`, function (error, response, body) {
-               c.echo(''); c.echo('|----- output -----|')
+               c.echo(''); c.echo('|----- output -----|'); c.echo('');
                c.echo(body)
                c.echo('|----- output -----|')
             }); masuk.close();
@@ -118,7 +118,7 @@ masuk.question(' [my#tools] | : ', (tampil) => {
          masuk.question(pa + '!'.merah + gar + ' Ip / Domain        : ', (ff) => {
             c.echo(garis);
             c.echo(pa + '√'.biru + gar + ' Harap Tunggu .. ');c.echo(garis); z(url[5] + `${ff}`, function (error, response, body) {
-               c.echo(''); c.echo('|----- output -----|')
+               c.echo(''); c.echo('|----- output -----|'); c.echo('');
                c.echo(body)
                c.echo('|----- output -----|')
             }); masuk.close();
@@ -127,7 +127,7 @@ masuk.question(' [my#tools] | : ', (tampil) => {
          masuk.question(pa + '!'.merah + gar + ' Enter Ip Address   : ', (gg) => {
             c.echo(garis);
             c.echo(pa + '√'.biru + gar + ' Harap Tunggu .. ');c.echo(garis); z(url[6] + `${gg}`, function (error, response, body) {
-               c.echo(''); c.echo('|----- output -----|')
+               c.echo(''); c.echo('|----- output -----|'); c.echo('');
                c.echo(body)
                c.echo('|----- output -----|')
             }); masuk.close();
@@ -136,7 +136,7 @@ masuk.question(' [my#tools] | : ', (tampil) => {
          masuk.question(pa + '!'.merah + gar + ' Enter Ip Address   : ', (hh) => {
             c.echo(garis);
             c.echo(pa + '√'.biru + gar + ' Harap Tunggu .. ');c.echo(garis); z(url[7] + `${hh}`, function (error, response, body) {
-               c.echo(''); c.echo('|----- output -----|')
+               c.echo(''); c.echo('|----- output -----|'); c.echo('');
                c.echo(body)
                c.echo('|----- output -----|')
             }); masuk.close();
@@ -145,7 +145,7 @@ masuk.question(' [my#tools] | : ', (tampil) => {
          masuk.question(pa + '!'.merah + gar + ' Ip / Domain        : ', (ii) => {
             c.echo(garis);
             c.echo(pa + '√'.biru + gar + ' Harap Tunggu .. ');c.echo(garis); z(url[8] + `${ii}`, function (error, response, body) {
-               c.echo(''); c.echo('|----- output -----|')
+               c.echo(''); c.echo('|----- output -----|'); c.echo('');
                c.echo(body)
                c.echo('|----- output -----|')
             }); masuk.close();
@@ -154,7 +154,7 @@ masuk.question(' [my#tools] | : ', (tampil) => {
          masuk.question(pa + '!'.merah + gar + ' Enter Ip Address   : ', (jj) => {
             c.echo(garis);
             c.echo(pa + '√'.biru + gar + ' Harap Tunggu .. ');c.echo(garis); z(url[9] + `${jj}`, function (error, response, body) {
-               c.echo(''); c.echo('|----- output -----|')
+               c.echo(''); c.echo('|----- output -----|'); c.echo('');
                c.echo(body)
                c.echo('|----- output -----|')
             }); masuk.close();
@@ -163,7 +163,7 @@ masuk.question(' [my#tools] | : ', (tampil) => {
          masuk.question(pa + '!'.merah + gar + ' Enter Domain       : ', (kk) => {
             c.echo(garis);
             c.echo(pa + '√'.biru + gar + ' Harap Tunggu .. ');c.echo(garis); z(url[10] + `${kk}`, function (error, response, body) {
-               c.echo(''); c.echo('|----- output -----|')
+               c.echo(''); c.echo('|----- output -----|'); c.echo('');
                c.echo(body)
                c.echo('|----- output -----|')
             }); masuk.close();
@@ -172,7 +172,7 @@ masuk.question(' [my#tools] | : ', (tampil) => {
          masuk.question(pa + '!'.merah + gar + ' Enter Domain       : ', (ll) => {
             c.echo(garis);
             c.echo(pa + '√'.biru + gar + ' Harao Tunggu .. ');c.echo(garis); z(url[11] + `${ll}`, function (error, response, body) {
-               c.echo(''); c.echo('|----- output -----|')
+               c.echo(''); c.echo('|----- output -----|'); c.echo('');
                c.echo(body)
                c.echo('|----- output -----|')
             }); masuk.close();
@@ -181,7 +181,7 @@ masuk.question(' [my#tools] | : ', (tampil) => {
          masuk.question(pa + '!'.merah + gar + ' Ip / Domain        : ', (mm) => {
             c.echo(garis);
             c.echo(pa + '√'.biru + gar + ' Harap Tunggu .. ');c.echo(garis); z(url[12] + `${mm}`, function (error, response, body) {
-               c.echo(''); c.echo('|----- output -----|')
+               c.echo(''); c.echo('|----- output -----|'); c.echo('');
                c.echo(body)
                c.echo('|----- output -----|')
             }); masuk.close();
@@ -190,7 +190,7 @@ masuk.question(' [my#tools] | : ', (tampil) => {
          masuk.question(pa + '!'.merah + gar + ' Ip / Domain        : ', (nn) => {
              c.echo(garis);
              c.echo(pa + '√'.biru + gar + ' Harap Tunggu ..');c.echo(garis);
-               c.echo(''); c.echo('|----- output -----|');
+               c.echo(''); c.echo('|----- output -----|'); c.echo('');
                c.echo(''); c.exec('ping ' + `${nn}`); c.echo('');
                c.echo('|----- output -----|');
           masuk.close();
