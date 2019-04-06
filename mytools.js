@@ -49,11 +49,11 @@ const masuk = b.createInterface({
 
 pa = ' ['.kuning, gar = '] '.kuning
 
-c.echo(pa + '1' + gar + 'DNS Lookup        ' + pa + '6' + gar + 'Whois Lookup     ' + pa + '11' + gar + 'HTTP Header Check')
-c.echo(pa + '2' + gar + 'Reverse DNS       ' + pa + '7' + gar + 'GeoIp Lookup     ' + pa + '12' + gar + 'Extract Link From Web')
-c.echo(pa + '3' + gar + 'Find DNS Record   ' + pa + '8' + gar + 'Reverse Ip Lookup' + pa + '13' + gar + 'Trace Route')
-c.echo(pa + '4' + gar + 'Find Shared DNS   ' + pa + '9' + gar + 'TCP Port Scan    ' + pa + '99' + gar + 'Quit');
-c.echo(pa + '5' + gar + 'Zone Transfer Test' + pa + '10' + gar + 'Subnet Lookup   '); c.echo("");
+c.echo(pa + '1' + gar + 'DNS Lookup        ' + pa + '6' + gar + 'Whois Lookup     ' + pa + '11' + gar + 'HTTP Header Check    ');
+c.echo(pa + '2' + gar + 'Reverse DNS       ' + pa + '7' + gar + 'GeoIp Lookup     ' + pa + '12' + gar + 'Extract Link From Web');
+c.echo(pa + '3' + gar + 'Find DNS Record   ' + pa + '8' + gar + 'Reverse Ip Lookup' + pa + '13' + gar + 'Trace Route          ');
+c.echo(pa + '4' + gar + 'Find Shared DNS   ' + pa + '9' + gar + 'TCP Port Scan    ' + pa + '14' + gar + 'Tes Ping             ');
+c.echo(pa + '5' + gar + 'Zone Transfer Test' + pa + '10' + gar + 'Subnet Lookup   ' + pa + '99' + gar + 'Quit     '); c.echo("");
 
 // ---------- url ----------
 
@@ -186,6 +186,15 @@ masuk.question(' [my#tools] | : ', (tampil) => {
                c.echo('|----- output -----|')
             }); masuk.close();
          });
+     } else if (`${tampil}` == 14){
+         masuk.question(pa + '!'.merah + gar + ' Ip / Domain        : ', (nn) => {
+             c.echo(garis);
+             c.echo(pa + '√'.biru + gar + ' Harap Tunggu ..');c.echo(garis);
+               c.echo('|----- output -----|');
+               c.echo(); c.exec(`${nn}`); c.echo('');
+               c.echo('|----- output -----|');
+          masuk.close();
+          });
      } else if (`${tampil}` == 99){
             c.echo(pa + '√'.biru + gar + " Harap Tunggu .. "); c.exec('exit'); c.exec('clear off'); c.echo(' Thanks for using this tools');
             c.echo('      [ my#tools ] > bye     '); c.exec('clear off && ls'); masuk.close();
