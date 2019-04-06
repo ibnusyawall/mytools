@@ -14,3 +14,6 @@ $ cd mytools
 $ node mytools
 
 </pre>
+
+#### version
+<pre> v 0.0.2 </pre>
