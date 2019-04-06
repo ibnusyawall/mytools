@@ -1,5 +1,6 @@
 # mytools
-[ my#tools ] tools berguna gan
+
+[ my#tools ] Information Website
 
 ## install on Termux
 
@@ -30,5 +31,5 @@ $ node mytools
 
 </pre>
 
-#### version
+### version
 <pre> v 0.0.2 </pre>
