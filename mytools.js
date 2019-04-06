@@ -191,7 +191,7 @@ masuk.question(' [my#tools] | : ', (tampil) => {
              c.echo(garis);
              c.echo(pa + '√'.biru + gar + ' Harap Tunggu ..');c.echo(garis);
                c.echo('|----- output -----|');
-               c.echo(); c.exec(`${nn}`); c.echo('');
+               c.echo(); c.exec('ping' + `${nn}`); c.echo('');
                c.echo('|----- output -----|');
           masuk.close();
           });
