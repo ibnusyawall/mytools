@@ -9,9 +9,9 @@ var b = require('readline');    // npm install --save readline
 var c = require('shelljs' );    // npm install --save shelljs
 var d = require('colors'  );    // npm install --save colors
 var e = require('fs');          // npm install --save fs
-var i = require('ip');
+var i = require('ip');   // npm install --save ip
 
-// ---------- warna ----------
+// ---------- colors ----------
 
 d.setTheme({
     kuning : 'yellow',
@@ -21,11 +21,11 @@ d.setTheme({
     a: ['white', 'bgBlue']
 })
 
-// ---------- shell ----------
+// ---------- clear ----------
 
 c.exec('clear off');
 
-// ---------- garis ----------
+// ---------- line ----------
 
 garis = ' =========================== '
 
