@@ -9,7 +9,8 @@ var b = require('readline');    // npm install --save readline
 var c = require('shelljs' );    // npm install --save shelljs
 var d = require('colors'  );    // npm install --save colors
 var e = require('fs');          // npm install --save fs
-var i = require('ip');   // npm install --save ip
+var i = require('ip');          // npm install --save ip
+var g = require('base-64');     // npm install --save base-64
 
 // ---------- colors ----------
 
@@ -39,7 +40,7 @@ c.echo('       |___| ')
 c.echo('')
 c.echo("     C" + " : " + "I".merah + "bnu " + "S".merah + "yawall")
 c.echo("   407 Authentic Exploit")
-c.echo(garis); c.echo(' v 0.1.1'); c.echo('');
+c.echo(garis); c.echo(' v 1.0.0'); c.echo('');
 
 // ---------- input ----------
 
@@ -61,6 +62,7 @@ c.echo(pa + '5' + gar + 'Zone Transfer Test' + pa + '10' + gar + 'Subnet Lookup 
 c.echo(pa + '16' + gar + 'SiteMap-Scan ');
 c.echo(pa + '17' + gar + 'Admin Finder             Your Ip  : ' + '| '.merah + i.address() + ' | '.merah);
 c.echo(pa + '18' + gar + 'Find Uploader ');
+c.echo(pa + '19' + gar + 'BS64 Encoder/Decoder');
 c.echo(pa + '99' + gar + 'Exit / Keluar');
 
 // ---------- url ----------
@@ -563,6 +565,26 @@ c.echo(' '); masuk.question(' [my#tools] | : ', (tampil) => {
           }
         });
 
+     } else if (`${tampil}` == 19) {
+         c.echo(''); c.echo('    ['.merah + ' bs64 encoder / decoder' + ' | '.biru + '407 AUTHENTIC EXPLOIT ' + ']    '.merah); c.echo('');
+         c.echo(' ['.merah + 'MENU' + '] '.merah + ':'); c.echo('') ;
+         c.echo('       ['.biru + '1' + '] '.biru + 'ENCODER');
+         c.echo('       ['.biru + '2' + '] '.biru + 'DECODER');
+         c.echo('');
+
+         masuk.question(' [ En/Dec ] : ', (bs) => {
+           if (`${bs}` == 01 || `${bs}` == 1) {
+             c.echo(''); masuk.question(' ['.biru + '?' + '] '.biru + 'Input Value : ', (enc) => {
+               var data = g.encode(`${enc}`);
+               c.echo(''); c.echo(' ['.kuning + 'RESULT' + '] '.kuning + ' : ' + '[ ' + `${data}`.hijau + ' ]'); masuk.close();
+             });
+           } else if (`${bs}` == 02 || `${bs}` == 2) {
+             c.echo(''); masuk.question(' ['.biru + '?' + '] '.biru + 'Input Value : ', (dec) => {
+               var data = g.decode(`${dec}`);
+               c.echo(''); c.echo(' ['.kuning + 'RESULT' + '] '.kuning + ' : ' + '[ ' + `${data}`.biru + ' ]'); masuk.close();
+             });
+           };
+         });
      } else if (`${tampil}` == 99) {
             c.echo(pa + '√'.biru + gar + " Harap Tunggu .. "); c.exec('exit'); c.exec('clear off'); c.echo(' Thanks for using this tools');
             c.echo('      [ my#tools ] > bye     '); c.exec('clear off && ls'); masuk.close();
