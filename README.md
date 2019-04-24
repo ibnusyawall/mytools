@@ -42,7 +42,7 @@ Supports on all platforms as long as you have installed **nodejs** on your termi
 You must install the following dependencies so that these tools run normally : 
 
 ```
-$ npm i --save request readline colors shelljs fs ip
+$ npm install
 ```
 
 ## Usage
