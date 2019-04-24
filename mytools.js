@@ -4,13 +4,14 @@
 
 // ---------- module ----------
 
-var z = require('request' );    // npm install --save request
-var b = require('readline');    // npm install --save readline
-var c = require('shelljs' );    // npm install --save shelljs
-var d = require('colors'  );    // npm install --save colors
-var e = require('fs');          // npm install --save fs
-var i = require('ip');          // npm install --save ip
-var g = require('base-64');     // npm install --save base-64
+var z = require('request' );    // npm i --save request
+var b = require('readline');    // npm i --save readline
+var c = require('shelljs' );    // npm i --save shelljs
+var d = require('colors'  );    // npm i --save colors
+var e = require('fs');          // npm i --save fs
+var i = require('ip');          // npm i --save ip
+var g = require('base-64');     // npm i --save base-64
+var h = require('base32') ;     // npm i --save base32
 
 // ---------- colors ----------
 
@@ -59,11 +60,14 @@ c.echo(pa + '3' + gar + 'Find DNS Record   ' + pa + '8' + gar + 'Reverse Ip Look
 c.echo(pa + '4' + gar + 'Find Shared DNS   ' + pa + '9' + gar + 'TCP Port Scan    ' + pa + '14' + gar + 'Tes Ping             ');
 c.echo(pa + '5' + gar + 'Zone Transfer Test' + pa + '10' + gar + 'Subnet Lookup   ' + pa + '15' + gar + 'Robots-Scan'); c.echo("");
 
-c.echo(pa + '16' + gar + 'SiteMap-Scan ');
+c.echo(pa + '16' + gar + 'SiteMap-Scan '       );
 c.echo(pa + '17' + gar + 'Admin Finder             Your Ip  : ' + '| '.merah + i.address() + ' | '.merah);
-c.echo(pa + '18' + gar + 'Find Uploader ');
+c.echo(pa + '18' + gar + 'Find Uploader '      );
 c.echo(pa + '19' + gar + 'BS64 Encoder/Decoder');
-c.echo(pa + '99' + gar + 'Exit / Keluar');
+c.echo(pa + '20' + gar + 'BS32 Encoder/Decoder'); c.echo('');
+
+c.echo(pa + '21' + gar + 'SHA1 HASH GENERATE');
+c.echo(pa + '99' + gar + 'Exit / Keluar'     );
 
 // ---------- url ----------
 
@@ -585,6 +589,34 @@ c.echo(' '); masuk.question(' [my#tools] | : ', (tampil) => {
              });
            };
          });
+
+     } else if (`${tampil}` == 20) {
+         c.echo(''); c.echo('    ['.merah + ' bs32 encoder / decoder' + ' | '.biru + '407 AUTHENTIC EXPLOIT ' + ']    '.merah); c.echo('');
+         c.echo(' ['.merah + 'MENU' + '] '.merah + ':'); c.echo('') ;
+         c.echo('       ['.biru + '1' + '] '.biru + 'ENCODER');
+         c.echo('       ['.biru + '2' + '] '.biru + 'DECODER');
+         c.echo('');
+
+         masuk.question(' [ En/Dec ] : ', (bs) => {
+           if (`${bs}` == 01 || `${bs}` == 1) {
+             c.echo(''); masuk.question(' ['.biru + '?' + '] '.biru + 'Input Value : ', (enc) => {
+               var data = h.encode(`${enc}`);
+               c.echo(''); c.echo(' ['.kuning + 'RESULT' + '] '.kuning + ' : ' + '[ ' + `${data}`.hijau + ' ]'); masuk.close();
+             });
+           } else if (`${bs}` == 02 || `${bs}` == 2) {
+             c.echo(''); masuk.question(' ['.biru + '?' + '] '.biru + 'Input Value : ', (dec) => {
+               var data = h.decode(`${dec}`);
+               c.echo(''); c.echo(' ['.kuning + 'RESULT' + '] '.kuning + ' : ' + '[ ' + `${data}`.biru + ' ]'); masuk.close();
+             });
+           };
+         });
+
+     } else if (`${tampil}` == 21) {
+         c.echo(''); c.echo('    ['.merah + ' sha1 hash generate' + ' | '.biru + '407 AUTHENTIC EXPLOIT ' + ']    '.merah); c.echo('');
+            c.echo(''); masuk.question(' ['.biru + '?' + '] '.biru + 'Input Value : ', (enc) => {
+               var data = h.sha1(`${enc}`);
+               c.echo(''); c.echo(' ['.kuning + 'RESULT' + '] '.kuning + ' : ' + '[ ' + `${data}`.hijau + ' ]'); masuk.close();
+             });
      } else if (`${tampil}` == 99) {
             c.echo(pa + '√'.biru + gar + " Harap Tunggu .. "); c.exec('exit'); c.exec('clear off'); c.echo(' Thanks for using this tools');
             c.echo('      [ my#tools ] > bye     '); c.exec('clear off && ls'); masuk.close();
