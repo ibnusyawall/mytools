@@ -8,10 +8,15 @@ var z = require('request' );    // npm i --save request
 var b = require('readline');    // npm i --save readline
 var c = require('shelljs' );    // npm i --save shelljs
 var d = require('colors'  );    // npm i --save colors
-var e = require('fs');          // npm i --save fs
-var i = require('ip');          // npm i --save ip
-var g = require('base-64');     // npm i --save base-64
-var h = require('base32') ;     // npm i --save base32
+var e = require('fs') ;         // npm i --save fs
+var i = require('ip') ;         // npm i --save ip
+var g = require('base-64')  ;   // npm i --save base-64
+var h = require('base32')   ;   // npm i --save base32
+var f = require('crypto-js');   // npm i --save crypto-js
+
+/* ---------- cryptojs --------- */
+
+var crypto = require('crypto-js');
 
 // ---------- colors ----------
 
@@ -66,8 +71,8 @@ c.echo(pa + '18' + gar + 'Find Uploader '      );
 c.echo(pa + '19' + gar + 'BS64 Encoder/Decoder');
 c.echo(pa + '20' + gar + 'BS32 Encoder/Decoder'); c.echo('');
 
-c.echo(pa + '21' + gar + 'SHA1 HASH GENERATE');
-c.echo(pa + '99' + gar + 'Exit / Keluar'     );
+c.echo(pa + '21' + gar + 'HASH GENERATOR');
+c.echo(pa + '99' + gar + 'Exit / Keluar' );
 
 // ---------- url ----------
 
@@ -587,7 +592,9 @@ c.echo(' '); masuk.question(' [my#tools] | : ', (tampil) => {
                var data = g.decode(`${dec}`);
                c.echo(''); c.echo(' ['.kuning + 'RESULT' + '] '.kuning + ' : ' + '[ ' + `${data}`.biru + ' ]'); masuk.close();
              });
-           };
+           } else {
+             c.echo(''); c.echo(' ['.merah + '!' + '] '.merah + 'Input interupt ! closed '); masuk.close();
+           }
          });
 
      } else if (`${tampil}` == 20) {
@@ -608,15 +615,53 @@ c.echo(' '); masuk.question(' [my#tools] | : ', (tampil) => {
                var data = h.decode(`${dec}`);
                c.echo(''); c.echo(' ['.kuning + 'RESULT' + '] '.kuning + ' : ' + '[ ' + `${data}`.biru + ' ]'); masuk.close();
              });
-           };
+           } else {
+             c.echo(''); c.echo(' ['.merah + '!' + '] '.merah + 'Input interupt ! closed '); masuk.close();
+           }
          });
 
      } else if (`${tampil}` == 21) {
-         c.echo(''); c.echo('    ['.merah + ' sha1 hash generate' + ' | '.biru + '407 AUTHENTIC EXPLOIT ' + ']    '.merah); c.echo('');
-            c.echo(''); masuk.question(' ['.biru + '?' + '] '.biru + 'Input Value : ', (enc) => {
-               var data = h.sha1(`${enc}`);
-               c.echo(''); c.echo(' ['.kuning + 'RESULT' + '] '.kuning + ' : ' + '[ ' + `${data}`.hijau + ' ]'); masuk.close();
-             });
+
+           c.echo(''); c.echo('    ['.merah + ' HASH GENERATOR' + ' | '.biru + '407 AUTHENTIC EXPLOIT ' + ']    '.merah); c.echo('');
+           c.echo(' ['.merah + 'MENU' + '] '.merah + ':'); c.echo('') ;
+           c.echo('       ['.biru + '1' + '] '.biru + 'SHA1 HASH GENERATE');
+           c.echo('       ['.biru + '2' + '] '.biru + 'SHA3 HASH GENERATE');
+           c.echo('       ['.biru + '3' + '] '.biru + 'SHA256 HASH GENERATE');
+           c.echo('       ['.biru + '4' + '] '.biru + 'SHA512 HASH GENERATE');
+           c.echo('       ['.biru + '5' + '] '.biru + 'RIPEMD160 HASH GENERATE');
+           c.echo('');
+
+           masuk.question(' ['.kuning + '?' + '] '.kuning + 'CHOICE : ', (what) => {
+             if (`${what}` == 01 || `${what}` == 1) {
+                c.echo(''); masuk.question(' ['.biru + '?' + '] '.biru + 'Input Value : ', (dec) => {
+                  var data = crypto.SHA1(`${dec}`);
+                  c.echo(''); c.echo(' ['.kuning + 'RESULT' + '] '.kuning + ' : ' + '[ ' + `${data}`.biru + ' ]'); masuk.close();
+                });
+             } else if (`${what}` == 02 || `${what}` == 2) {
+                c.echo(''); masuk.question(' ['.biru + '?' + '] '.biru + 'Input Value : ', (dec) => {
+                  var data = crypto.SHA3(`${dec}`);
+                  c.echo(''); c.echo(' ['.kuning + 'RESULT' + '] '.kuning + ' : ' + '[ ' + `${data}`.biru + ' ]'); masuk.close();
+                });
+             } else if (`${what}` == 03 || `${what}` == 3) {
+                c.echo(''); masuk.question(' ['.biru + '?' + '] '.biru + 'Input Value : ', (dec) => {
+                  var data = crypto.SHA256(`${dec}`);
+                  c.echo(''); c.echo(' ['.kuning + 'RESULT' + '] '.kuning + ' : ' + '[ ' + `${data}`.biru + ' ]'); masuk.close();
+                });
+             } else if (`${what}` == 04 || `${what}` == 4) {
+                c.echo(''); masuk.question(' ['.biru + '?' + '] '.biru + 'Input Value : ', (dec) => {
+                  var data = crypto.SHA512(`${dec}`);
+                  c.echo(''); c.echo(' ['.kuning + 'RESULT' + '] '.kuning + ' : ' + '[ ' + `${data}`.biru + ' ]'); masuk.close();
+                });
+             } else if (`${what}` == 05 || `${what}` == 5) {
+                c.echo(''); masuk.question(' ['.biru + '?' + '] '.biru + 'Input Value : ', (dec) => {
+                  var data = crypto.RIPEMD160(`${dec}`);
+                  c.echo(''); c.echo(' ['.kuning + 'RESULT' + '] '.kuning + ' : ' + '[ ' + `${data}`.biru + ' ]'); masuk.close();
+                });
+             } else {
+                c.echo(''); c.echo(' ['.merah + '!' + '] '.merah + 'Input interupt ! closed '); masuk.close();
+             }
+           });
+
      } else if (`${tampil}` == 99) {
             c.echo(pa + '√'.biru + gar + " Harap Tunggu .. "); c.exec('exit'); c.exec('clear off'); c.echo(' Thanks for using this tools');
             c.echo('      [ my#tools ] > bye     '); c.exec('clear off && ls'); masuk.close();
